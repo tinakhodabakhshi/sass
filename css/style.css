@@ -1,0 +1,151 @@
+.hero * {
+  animation: fadeIn 2s, descend 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes descend {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+button {
+  padding: 0.5rem 1.5rem;
+  transition: all 0.5s;
+  border-radius: 7px;
+  border-width: 0;
+}
+button:not(:last-of-type) {
+  margin-right: 1rem;
+}
+button:hover {
+  scale: 1.1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.527);
+}
+
+.button-blue {
+  background-color: #0e6cff;
+}
+
+.button-orange {
+  background-color: #ff8700;
+}
+
+.button-green {
+  background-color: #4caf50;
+}
+
+body {
+  color: #f4f4f4;
+}
+
+.hero {
+  background-color: #640fc5;
+}
+
+button, a {
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.headline h1 {
+  font-size: 2.5rem;
+}
+.headline p {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+.headline button {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+*, *::before, *:after {
+  box-sizing: border-box;
+}
+
+nav ul {
+  margin: 0;
+}
+
+.headline h1 {
+  margin-top: 0;
+}
+.headline p {
+  margin: 0;
+}
+
+nav {
+  padding: 0.5rem;
+}
+nav ul {
+  padding-left: 1rem;
+}
+nav ul li:not(:last-of-type) {
+  margin-right: 0.5rem;
+}
+
+.headline {
+  padding: 2rem 3rem 3rem;
+}
+.headline > div:last-of-type {
+  margin-top: 3rem;
+}
+
+.container > section {
+  margin-top: 2rem;
+}
+
+.container {
+  width: 1170px;
+  margin-inline: auto;
+}
+
+.hero {
+  text-align: center;
+}
+.hero nav {
+  display: flex;
+  align-items: center;
+}
+.hero nav ul {
+  list-style-type: none;
+}
+.hero nav ul li {
+  display: inline-block;
+}
+.hero nav ul li a {
+  text-decoration: none;
+}
+.hero .headline > div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+.hero .headline > div:first-of-type img {
+  display: block;
+  height: auto;
+}
+.hero .headline > div:first-of-type > * {
+  width: 50%;
+}
+
+.container > section {
+  display: flex;
+  justify-content: space-between;
+}
+.container > section img {
+  display: block;
+  width: 20%;
+}/*# sourceMappingURL=style.css.map */

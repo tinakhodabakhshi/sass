@@ -1,0 +1,24 @@
+button{
+    padding: .5rem 1.5rem;
+    transition: all 0.5s;
+    border-radius: 7px;
+    border-width: 0;
+    &:not(:last-of-type){
+        margin-right: 1rem;
+    }
+    &:hover{
+        scale: 1.1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.527);
+    }
+}
+
+$buttonColors:( 
+    blue: #0e6cff,
+    orange: #ff8700,
+    green: #4caf50);
+
+@each $color, $colorExa in $buttonColors {
+    .button-#{$color} {
+        background-color: $colorExa;
+    }
+}

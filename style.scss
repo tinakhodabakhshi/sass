@@ -1,0 +1,79 @@
+@import "./partials/animations.scss";
+@import "./partials/buttons.scss";
+@import "./partials/colors.scss";
+@import "./partials/fonts.scss";
+@import "./partials/reset.scss";
+
+
+nav {
+    padding: .5rem;
+    ul {
+        padding-left: 1rem;
+        li{
+          &:not(:last-of-type){
+            margin-right: .5rem;
+          }  
+        }
+    }
+}
+.headline {
+    padding: 2rem 3rem 3rem;
+    &>div:last-of-type{
+        margin-top: 3rem;
+    }
+}
+
+.container {
+    & > section {
+        margin-top: 2rem;
+    }
+}
+
+
+
+.container {
+    width: 1170px;
+    margin-inline: auto;
+}
+
+.hero {
+    text-align: center;
+    nav {
+        display: flex;
+        align-items: center;
+        ul{
+            list-style-type: none;
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .headline {
+        &>div:first-of-type{
+            display: flex;
+            align-items: center;
+            img {
+                display: block;
+                height: auto;
+            }
+            &>* {
+                width: 50%;
+            }
+        }
+
+    }
+}
+
+.container {
+    & > section {
+        display: flex;
+        justify-content: space-between;
+        img {
+            display: block;
+            width: 20%;
+        }
+    }
+}

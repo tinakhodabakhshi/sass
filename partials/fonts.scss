@@ -1,0 +1,23 @@
+$buttonsFontSize: 1rem;
+
+@mixin titleBig($titleBigFontSize){
+    font-size: $titleBigFontSize;
+};
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.headline {
+    h1 {
+        @include titleBig(2.5rem);
+    }
+    p{
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+    button{
+        font-weight: 700;
+        font-size: $buttonsFontSize;
+    }
+}

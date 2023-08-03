@@ -1,0 +1,14 @@
+*, *::before, *:after {
+  box-sizing: border-box;
+}
+
+nav ul {
+  margin: 0;
+}
+
+.headline h1 {
+  margin-top: 0;
+}
+.headline p {
+  margin: 0;
+}/*# sourceMappingURL=reset.css.map */

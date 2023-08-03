@@ -1,0 +1,14 @@
+$colorPrimary: #f4f4f4;
+$bgColorSecondary: #640fc5;
+
+body {
+    color: $colorPrimary;
+}
+
+.hero {
+    background-color: $bgColorSecondary;
+}
+
+button,a {
+    color: inherit;
+}

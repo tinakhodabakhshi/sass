@@ -1,0 +1,21 @@
+.hero * {
+    animation: fadeIn 2s, descend 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes descend {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
